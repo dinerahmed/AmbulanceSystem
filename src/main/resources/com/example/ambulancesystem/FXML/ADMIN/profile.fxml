@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="danchore" prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ambulancesystem.controllers.ADMIN.dashboard">
+   <children>
+      <ImageView fitHeight="650.0" fitWidth="1100.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../Image/base2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="107.0" fitWidth="121.0" layoutX="479.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Image/user.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="504.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutX="280.0" layoutY="288.0" opacity="0.82" prefHeight="233.0" prefWidth="503.0" style="-fx-background-color: black; -fx-border-color: #FFD700; -fx-border-width: 5px;">
+         <children>
+            <Label layoutX="81.0" layoutY="66.0" prefHeight="26.0" prefWidth="128.0" text="User name:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="81.0" layoutY="107.0" text="E-mail:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="81.0" layoutY="144.0" text="Phone number:" textFill="#f7f6f6">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="show_user" layoutX="270.0" layoutY="70.0" prefHeight="18.0" prefWidth="150.0" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="show_email" layoutX="270.0" layoutY="108.0" prefHeight="27.0" prefWidth="224.0" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="show_number" layoutX="269.0" layoutY="149.0" prefHeight="18.0" prefWidth="128.0" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

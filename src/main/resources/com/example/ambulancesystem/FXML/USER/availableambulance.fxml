@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="903.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ambulancesystem.controllers.USER.available">
+   <children>
+      <TableView fx:id="avail" layoutX="96.0" layoutY="173.0" opacity="0.8" prefHeight="379.0" prefWidth="742.0" style="-fx-border-color: black; -fx-border-width: 5px;">
+        <columns>
+          <TableColumn fx:id="user" prefWidth="233.5999755859375" text="User" />
+          <TableColumn fx:id="no" prefWidth="180.79998779296875" text="Ambulance No" />
+            <TableColumn fx:id="location" prefWidth="327.1999877929687" text="Location" />
+        </columns>
+      </TableView>
+      <Label layoutX="265.0" layoutY="76.0" text="Available Ambulances" textFill="#1448c1">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
